@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vote Now!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            width: auto;
+            margin: 30px;
+        }
+
+        #chartContainer {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Poll for your OS</h1>
+    <p>Which one will you go for??</p>
+    <form id='candidates'>
+        <p>
+            <input type="radio" name="os" id="windows" value="Windows">
+            <label for="windows">Windows</label>
+        </p>
+        <p>
+            <input type="radio" name="os" id="macos" value="MacOS">
+            <label for="macos">MacOS</label>
+        </p>
+        <p>
+            <input type="radio" name="os" id="linux" value="Linux">
+            <label for="linux">Linux Distro</label>
+        </p>
+        <p>
+            <input type="radio" name="os" id="other" value="Other">
+            <label for="other">Something Else</label>
+        </p>
+        <input type="submit" value="Vote" class="btn">
+    </form>
+
+    <div id="chartContainer"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

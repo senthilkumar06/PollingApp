@@ -1,0 +1,15 @@
+{
+  "name": "pollapp",
+  "version": "1.0.0",
+  "description": "RealTime polling app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Senthil kumar Balasubramanian",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
